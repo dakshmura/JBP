@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
+    @* Index.cshtml *@
+<button id="loginBtn">Login</button>
+<button id="registerBtn">Register</button>
+
+<script>
+    document.getElementById("loginBtn").addEventListener("click", function () {
+        window.location.href = "@Url.Action("Login", "Account")";
+    });
+
+    document.getElementById("registerBtn").addEventListener("click", function () {
+        window.location.href = "@Url.Action("Register", "Account")";
+    });
+</script>
+</p>
+</div>

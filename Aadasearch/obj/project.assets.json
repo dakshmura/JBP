@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muralivijayan/Desktop/JBP/Aadasearch/Aadasearch.csproj",
+      "projectUniqueName": "/Users/muralivijayan/Desktop/JBP/JBP/Aadasearch/Aadasearch.csproj",
       "projectName": "Aadasearch",
-      "projectPath": "/Users/muralivijayan/Desktop/JBP/Aadasearch/Aadasearch.csproj",
+      "projectPath": "/Users/muralivijayan/Desktop/JBP/JBP/Aadasearch/Aadasearch.csproj",
       "packagesPath": "/Users/muralivijayan/.nuget/packages/",
-      "outputPath": "/Users/muralivijayan/Desktop/JBP/Aadasearch/obj/",
+      "outputPath": "/Users/muralivijayan/Desktop/JBP/JBP/Aadasearch/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/muralivijayan/.nuget/NuGet/NuGet.Config"

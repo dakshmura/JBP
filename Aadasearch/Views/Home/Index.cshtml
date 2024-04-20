@@ -1,22 +1,50 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a CSS file for styling -->
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" id="loginButton">Login</button>
+        </form>
+        <p>Don't have an account? <button type="button" id="registerButton">Register Here</button>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
-    @* Index.cshtml *@
-<button id="loginBtn">Login</button>
-<button id="registerBtn">Register</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#loginForm").submit(function (event) {
+                event.preventDefault(); // Prevent default form submission
 
-<script>
-    document.getElementById("loginBtn").addEventListener("click", function () {
-        window.location.href = "@Url.Action("Login", "Account")";
+                // Extract username and password from form
+                var username = $("#username").val();
+                var password = $("#password").val();
+
+                // Perform login logic here (AJAX call or other)
+                // For demonstration purposes, alerting the entered credentials
+                alert("Username: " + username + "\nPassword: " + password);
+            });
+        });
+        $(document).ready(function () {
+// Register button click event
+        $("#registerButton").click(function () {
+            // Redirect to registration page
+            window.location.href = "/Account/Register";
+        });
     });
-
-    document.getElementById("registerBtn").addEventListener("click", function () {
-        window.location.href = "@Url.Action("Register", "Account")";
-    });
-</script>
-</p>
-</div>
+    </script>
+</body>
+</html>

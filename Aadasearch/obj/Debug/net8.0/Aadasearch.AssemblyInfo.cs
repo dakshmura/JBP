@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aadasearch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3a5d47aa4c455333c20e3eb57e43d5cee89de27")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aadasearch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aadasearch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
